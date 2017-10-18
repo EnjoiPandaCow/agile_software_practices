@@ -1,0 +1,23 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+       "angular": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": ["error",4 ],
+        "linebreak-style": ["error", "unix" ],
+        "quotes": ["error", "single" ],
+        "semi": [ "error", "always" ],
+        // enforces consistent newlines before or after dots
+        "dot-location": [ "error", "property"], 
+        "dot-notation": [0, { "allowKeywords": true }],
+        // require the use of === and !==
+        "eqeqeq": 0,       
+        "camelcase": 2,
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }]
+    }
+}
